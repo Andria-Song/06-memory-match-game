@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Memory Match Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Game Title -->
+        <h1>Emoji Memory Match</h1>
+
+        <!-- Game Stats (Moves and Timer) -->
+        <div class="stats">
+            <div class="stat">
+                <label>Moves:</label>
+                <div id="moves">0</div>
+            </div>
+            <div class="stat">
+                <label>Time:</label>
+                <div id="timer">0s</div>
+            </div>
+        </div>
+
+        <!-- Game Board (Grid of cards will be added by JavaScript) -->
+        <div id="gameBoard" class="game-board"></div>
+
+        <!-- Restart Button -->
+        <button id="restartBtn" class="restart-btn">Restart Game</button>
+
+        <!-- Win Message (hidden by default) -->
+        <div id="winMessage" class="win-message">
+            <h2>🎉 You Win! 🎉</h2>
+            <p id="finalStats"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
